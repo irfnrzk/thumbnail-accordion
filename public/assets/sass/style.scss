@@ -1,0 +1,227 @@
+@import "../bower_libs/bootstrap-sass/assets/stylesheets/_bootstrap";
+
+body{
+	//border: 1px solid blue;
+}
+
+.container-none{
+	display: none;
+}
+
+@media (min-width: 1200px){
+	.container-lg{
+		display: block;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+	.container-md{
+		display: block;
+	}
+}
+
+.row{
+	position: relative;
+	padding-bottom: 220px;
+
+	&.active{
+		padding-bottom: 20px;
+	}
+}
+
+.box{
+	&-post{
+		width: 200px;
+		height: 200px;
+		border: 1px solid #d2d2d2;
+		position: absolute;
+		top: 0;
+
+		&:hover{
+			box-shadow: 5px 5px 30px #d2d2d2;
+		}
+
+		&-1{
+			left: 0;
+			
+		}
+		&-2{
+			@media (min-width: 768px) and (max-width: 1200px){
+				left: 248px;
+			}
+			@media (min-width: 1200px){
+				left: 248px;
+			}
+		}
+		&-3{
+			@media (min-width: 768px) and (max-width: 1200px){
+				left: 488px;
+			}
+			@media (min-width: 1200px){
+				left: 488px;
+			}
+		}
+		&-4{
+			@media (min-width: 768px) and (max-width: 1200px){
+				left: 0;
+			}			
+			@media (min-width: 1200px){
+				left: 728px;
+			}
+		}
+		&-5{
+			@media (min-width: 768px) and (max-width: 1200px){
+				left: 248px;
+			}
+			@media (min-width: 1200px){
+				left: 968px;
+			}
+		}
+		&-6{
+			@media (min-width: 768px) and (max-width: 1200px){
+				left: 488px;
+			}
+			@media (min-width: 1200px){
+				left: 0;
+			}
+		}
+		&-7{
+			@media (min-width: 768px) and (max-width: 1200px){
+				left: 0;
+			}
+			@media (min-width: 1200px){
+				left: 248px;
+			}
+		}
+
+		&-container{
+			position: relative;
+		}
+
+		.year{
+			position: absolute; 
+			left: 50%;
+			transform: translate(-50%);
+			font-size: 18px;
+			color: #2c8fde;
+			font-weight: 700;
+		}
+
+		.image{
+			width: 95px;
+			height: 95px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			img{
+				width: 100%;
+			}
+		}
+	}
+
+	&-text{
+		margin-top: 220px;
+		//border: 1px solid black;
+		display: none;
+		width: 100%;
+		position: relative;
+		background: #f0f0f0;
+		padding: 40px;
+
+		&:after, &:before {
+			bottom: 100%;
+			left: 50%;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+		}
+
+		&:after {
+			border-bottom-color: #f0f0f0;
+			border-width: 10px;
+			margin-left: -10px;
+		}
+
+		&-1{
+			&:after, &:before {
+				left: 100px;
+			}
+		}
+		&-2{
+			&:after, &:before {
+				@media (min-width: 768px) and (max-width: 1200px){
+					left: 348px;
+				}
+				@media (min-width: 1200px){
+					left: 348px;
+				}
+			}
+		}
+		&-3{
+			&:after, &:before {
+				@media (min-width: 768px) and (max-width: 1200px){
+					left: 588px;
+				}
+				@media (min-width: 1200px){
+					left: 588px;
+				}
+			}
+		}
+		&-4{
+			&:after, &:before {
+				@media (min-width: 768px) and (max-width: 1200px){
+					left: 100px;
+				}
+				@media (min-width: 1200px){
+					left: 828px;
+				}
+			}
+		}
+		&-5{
+			&:after, &:before {
+				@media (min-width: 768px) and (max-width: 1200px){
+					left: 348px;
+				}
+				@media (min-width: 1200px){
+					left: 1068px;
+				}
+			}
+		}
+		&-6{
+			&:after, &:before {
+				@media (min-width: 768px) and (max-width: 1200px){
+					left: 828px;
+				}
+				@media (min-width: 1200px){
+					left: 100px;
+				}
+			}
+		}
+		&-7{
+			&:after, &:before {
+				@media (min-width: 768px) and (max-width: 1200px){
+					left: 100px;
+				}
+				@media (min-width: 1200px){
+					left: 348px;
+				}
+			}
+		}
+
+		&.active{
+			display: block;
+		}
+
+		.close{
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+}
+
+

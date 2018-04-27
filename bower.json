@@ -1,0 +1,21 @@
+{
+  "name": "testbench",
+  "description": "A sample Node.js app using Express 4",
+  "authors": [
+    "DESKTOP-HD16JN2\\irfnrzk_lion <irfan.abrazak@lionandlion.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^5.0.10",
+    "bourbon": "^5.0.0"
+  }
+}
